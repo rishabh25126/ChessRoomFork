@@ -1,18 +1,16 @@
-import "./App.css"
-import { Counter } from "./features/counter/Counter"
-import { Quotes } from "./features/quotes/Quotes"
-import logo from "./logo.svg"
+import "./App.css";
+import Counter from "./features/counter/Counter";
+import logo from "./logo.svg";
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
         <p className="text-3xl font-bold underline">
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <Quotes />
+        <Counter/>
         <span>
           <span>Learn </span>
           <a
@@ -62,7 +60,7 @@ const App = () => {
         </span>
       </header>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
